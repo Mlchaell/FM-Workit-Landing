@@ -92,6 +92,35 @@ header {
   position: relative;
 }
 
+.dec-img-1,
+.dec-img-2 {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .dec-img-1,
+  .dec-img-2 {
+    display: block;
+    position: absolute;
+  }
+
+  .dec-img-1 {
+    top: 4rem;
+    left: -15rem;
+  }
+  
+  .dec-img-2 {
+    bottom: 4rem;
+    right: -6rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .dec-img-1 {
+    left: -12rem;
+  }
+}
+
 header .heading-l span {
   position: relative;
 }
@@ -391,6 +420,12 @@ Helper Classes
   background-color: var(--green);
 }
 
+.btn:hover {
+  color: var(--green);
+  outline: 2px solid var(--green);
+  background-color: var(--purple);
+}
+
 .btn-no-bg {
   font-family: var(--ff-main);
   font-weight: var(--fw-semi-bold);
@@ -399,6 +434,11 @@ Helper Classes
   background-color: transparent;
   padding-bottom: 3px;
   border-bottom: 3px solid var(--green);
+}
+
+.btn-no-bg:hover {
+  cursor: pointer;
+  color: var(--green);
 }
 
 .btn,
